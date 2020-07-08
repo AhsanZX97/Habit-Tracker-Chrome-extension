@@ -1,5 +1,5 @@
 {
-  "name": "react-chrome-extension-boilerplate",
+  "name": "Habit Counter",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,8 @@
     "react-dom": "16.9.0",
     "react-draggable": "4.0.3",
     "react-feather": "2.0.3",
-    "react-scripts": "3.1.2"
+    "react-scripts": "3.1.2",
+    "ticktick-wrapper": "0.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
