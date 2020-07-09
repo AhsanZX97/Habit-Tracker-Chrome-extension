@@ -2,6 +2,7 @@ import React from 'react';
 import { X } from 'react-feather';
 import Draggable from 'react-draggable';
 import { ModalContext } from '../Contexts/ModalProvider';
+import Content from './Content'
 
 const Modal = () => {
   return (
@@ -24,13 +25,7 @@ const Modal = () => {
                       </div>
                     </div>
                     <div className="modal-content">
-                      <h3>{extensionId}</h3>
-                      <button
-                        onClick={getExtensionId}
-                        className="modal-button"
-                      >
-                        Get Extension ID
-                      </button>
+                      <Content />
                     </div>
                   </div>
                 </>
