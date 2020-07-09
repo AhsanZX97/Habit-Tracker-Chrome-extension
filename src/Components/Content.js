@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { password, username } from './secrets'
 
-
-class Content extends React.Component {
+export default class Content extends React.Component {
 
     constructor(props) {
         super(props)
@@ -14,7 +14,12 @@ class Content extends React.Component {
 
     getTickTickData() {
         const ticktick = require('ticktick-wrapper');
-
+        await ticktick.login({
+            email: {
+                username: username,
+                password: password,
+            },
+        });
     }
 
     render() {
