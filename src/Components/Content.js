@@ -12,7 +12,7 @@ export default class Content extends React.Component {
 
     }
 
-    getTickTickData() {
+    async getTickTickData() {
         const ticktick = require('ticktick-wrapper');
         await ticktick.login({
             email: {
